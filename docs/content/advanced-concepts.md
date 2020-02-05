@@ -57,30 +57,7 @@ The above code gives us a Box component with red text and black background.
 
 ## Build & Deployment
 
-There are a variety of ways to host your Spectacle presentation. Our preferred path is using [gh-pages][], but there are a wide range of options for deploying and hosting your shiny, new Spectacle presentation.
-
-<a name="deploying-with-gh-pages"></a>
-
-### Deploying with Github Pages
-
-[gh-pages][] is a simple way to host a static project directly from your Github profile. It deploys your project to a URL based on your username and repository name (e.g. your-username.github.io/your-repo-name).
-
-1. Add the following keys to your package.json (assumes you have a `create-react-app`-based project):
-
-   ```json
-   "homepage": "<your-username>.github.io/<your-repo-name>",
-   "scripts": {
-    "build": "yarn run clean && react-scripts build",
-    "clean": "rm -rf ./build",
-    "deploy": "yarn run build && gh-pages -d build"
-   }
-   ```
-
-2. Then, `yarn run deploy`
-
-3. Verify that `gh-pages` is the source branch for your Page site in Github (go to `Settings > Options > Github Pages > Source`)
-
-4. Visit your deployment at your-username.github.io/your-repo-name
+There are a variety of ways to host your Spectacle presentation.
 
 <a name="keyboard-controls"></a>
 
